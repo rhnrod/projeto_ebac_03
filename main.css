@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Phudu:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header config */
+header {
+    background-color: #79d179;
+}
+
+.text-header {
+    font-family: 'Phudu', cursive;
+}
+
+#header .nav-link,
+#shop .nav-link {
+    color: black;
+}
+
+#header .nav-link:hover,
+#shop .nav-link:hover {
+    background-color: #f5f76fc2;
+}
+
+#header .nav-link.active,
+#shop .nav-link.active {
+    background-color: #f4f76f;
+}
+
+#header .navbar-toggler {
+    border: none;
+}
+
+/* Sections config */
+
+.btn-green {
+    color: #79d179;
+    border-color: #79d179;
+}
+
+.btn-soldout {
+    color: #000000;
+    border-color: #afafaf;
+}
+
+.btn-green:hover {
+    background-color: #79d179;
+    border-color: #79d179;
+}
+
+section {
+    padding-top: 110px;
+}
+
+section p {
+    text-align: justify;
+}
+
+hr {
+    opacity: 0.15;
+}
+
+.news {
+    height: 250px;
+    max-width: 350px;
+    filter: grayscale(100%);
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.newstext {
+    max-width: 350px;
+}
+
+.newsdiv:hover .news {
+    filter: grayscale(0%);
+}
+
+.product {
+    height: 12%;
+    max-height: 77px;
+}
+
+.promo {
+    top: 0;
+    right: 12px;
+    padding: 2px;
+    background-color: #f4f76f;
+    color: brown;
+}
+
+img.book {
+    height: 375px;
+    object-fit: cover;
+}
+
+img.portrait {
+    height: 406px;
+    object-fit: cover;
+}
+
+.soldout {
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: red;
+}
+
+#loja {
+    height: fit-content;
+}
+
+/* Footer */
+
+footer {
+    background-color: #282828;
+    margin-top: 24px;
+    color: #fff;
+}
+
+footer form {
+    margin: 16px 0;
+}
+
+footer label {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer button.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+footer ul a.nav-link {
+    color: #f4f76f;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#instagram-link:hover {
+    color: #e95799;
+}
+
+#facebook-link:hover {
+    color: #4267B2;
+}
+
+#youtube-link:hover {
+    color: #f60100;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #produtodecor img {
+        object-fit: scale-down;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .newsdiv {
+        margin-bottom: 16px;
+    }
+
+    .promo {
+        display: none;
+    }
+
+    img.book {
+        object-fit: scale-down;
+    }
+
+    #cafeteria button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    footer h1 {
+        padding-left: 1rem;
+    }
+    footer a i.bi {
+        font-size: x-large;
+        color: #f4f76f;
+    }
+
+}

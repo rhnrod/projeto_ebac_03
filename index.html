@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 03 - Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-md p-4 sticky-top" id="header">
+        <div class="container">
+            <h1 class="navbar-brand m-0 fs-1 text-header fw-bold">
+                <i class="bi bi-eyeglasses d-none d-md-inline"></i>
+                Livraria Ludovicus
+            </h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navmenu navbar-collapse collapse justify-content-end" id="navmenu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold m-2 m-md-1">
+                        <a class="nav-link active" href="#artigos">
+                            <i class="bi bi-newspaper me-1"></i>
+                            Artigos
+                        </a>
+                    </li>
+
+                    <li class="nav-item fw-bold m-2 m-md-1">
+                        <a class="nav-link" href="#loja">
+                            <i class="bi bi-shop me-1"></i>
+                            Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold m-2 m-md-1">
+                        <a class="nav-link" href="#cafeteria">
+                            <i class="bi bi-cup-hot me-1"></i>
+                            Café
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <main>
+        <!-- Sections -->
+            <section id="artigos">
+                <article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <figure>
+                                    <img src="imgs/photo__graciliano_ramos.jpg" class="w-100 mb-2 rounded" alt="Capa do livro Vidas Secas">
+                                </figure>
+                            </div>
+                            <div class="col-lg-5">
+                                <h2 class="text-header h1">"Vidas Secas" de Graciliano Ramos completa 85 anos</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil impedit corporis iusto dolorum quasi alias! Nisi, perspiciatis veniam asperiores quis nemo, repellendus ipsum officia odit minus itaque modi quisquam?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil impedit corporis iusto dolorum quasi alias! Nisi, perspiciatis veniam asperiores quis nemo, repellendus ipsum officia odit minus itaque modi quisquam?
+                                </p>
+                                    <button class="btn btn-outline-success btn-green fw-bold">Leia mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-md-4 container newsdiv">
+                                <figure>
+                                    <img src="imgs/photo__camara_cascudo.jpg" alt="Câmara Cascudo segurando um prato" class="w-100 d-block rounded object-fit-cover news">
+                                </figure>
+                                <h6 class="fw-bold text-wrap newstext mb-2">Desvendando a Alimentação do Brasil com Câmara Cascudo.</h6>
+                                
+                                <button class="btn btn-outline-success btn-green fw-bold">Leia mais</button>
+                            </div>
+                            <div class="col-md-4 container newsdiv">
+                                <figure>
+                                    <img src="imgs/photo__jorge_amado.jpg" alt="Jorge Amado segurando um de seus livros" class="w-100 d-block rounded object-fit-cover news">
+                                </figure>
+                                <h6 class="fw-bold text-wrap newstext mb-2">Cinco obras indispensáveis de Jorge Amado.</h6>
+                                
+
+                                <button class="btn btn-outline-success btn-green fw-bold">Leia mais</button>
+                            </div>
+                            <div class="col-md-4 container newsdiv">
+                                <figure>
+                                    <img src="imgs/photo__jorge_ben.jpg" alt="Capa do álbum Samba Esquema Novo de Jorge Ben" class="w-100 d-block rounded object-fit-cover news">
+                                </figure>
+                                <h6 class="fw-bold text-wrap newstext mb-2">MPB: o disruptivo Samba Esquema Novo de Jorge Ben</h6>
+
+                                <button class="btn btn-outline-success btn-green fw-bold mt-auto">Leia mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="loja">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-header">Discos, Livros e Decoração</h2>
+                        <div class="col-md-4 col-lg-2 mb-3 mb-lg-0" id="shop">
+                            <div class="nav nav-pills flex-md-column">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#produtovinil" class="text-start nav-link active">
+                                    <i class="bi bi-vinyl-fill me-1 d-none d-md-inline"></i>
+                                    <span class="fw-bold">Vinil</span>
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#produtocd" class="text-start nav-link">
+                                    <i class="bi bi-disc me-1 d-none d-md-inline"></i>
+                                    <span class="fw-bold">CDs</span>
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#produtolivro" class="text-start nav-link">
+                                    <i class="bi bi-book me-1 d-none d-md-inline"></i>
+                                    <span class="fw-bold">Livros</span>
+                                </button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#produtodecor" class="text-start nav-link">
+                                    <i class="bi bi-house-heart me-1 d-none d-md-inline"></i>
+                                    <span class="fw-bold">Decor</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="produtovinil">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-lg-4 mb-5">
+                                            <img src="imgs/shop/vinils/vinil__samba_esquema_novo.jpg" alt="Vinil - Samba Esquema Novo" class="d-block w-100">
+                                            <h6 class="fw-bold text-wrap mt-1">Samba Esquema Novo</h6>
+                                            <p class="fst-italic">Jorge Ben, 1963</p><hr>
+                                            
+                                            <div class="d-flex pricetag justify-content-between align-items-baseline">
+                                                <div class="price justify-content-between align-items-baseline">
+                                                    <p class="fw-bold">R$ 350,00</p>
+                                                </div>
+                                                <button class="btn btn-outline-success btn-green fw-bold">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-5 position-relative">
+                                            <img src="imgs/shop/vinils/vinil__the_existential_soul.jpg" alt="Vinil - The Existential Soul of Tim Maia" class="d-block w-100">
+                                            <p class="small fw-bold position-absolute promo">PROMOÇÃO</p>
+                                            <h6 class="fw-bold text-wrap mt-1">The Existential Soul of Tim Maia</h6>
+                                            <p class="fst-italic">Tim Maia, 2012</p><hr>
+
+                                            <div class="d-flex pricetag justify-content-between align-items-baseline">
+                                                <div class="price d-flex justify-content-between align-items-baseline ">
+                                                    <p class="soldout small">R$ 420,00</p>
+                                                    <p class="fw-bold ms-3">R$ 370,00</p>
+                                                </div>
+                                                <button class="btn btn-outline-success btn-green fw-bold">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="produtocd">
+                                    <div class="row">
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/cds/cd__atras_alem.jpg" alt="CD - Atrás/Além" class="d-block w-100">
+                                            <h6 class="fw-bold text-wrap mt-1"> &lt;atrás/além&gt; </h6>
+                                            <p class="fst-italic">O Terno, 2019</p><hr>
+                                            
+                                            <div class="d-flex justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 45,00</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/cds/cd__maravilhas_da_vida_moderna.jpg" alt="CD - Maravilhas da Vida Moderna" class="d-block w-100">
+                                            <h6 class="fw-bold text-wrap mt-1"> Maravilhas da Vida Moderna </h6>
+                                            <p class="fst-italic">DINGO, 2015</p><hr>
+                                            
+                                            <div class="d-flex justify-content-between align-items-baseline">
+                                                <p class="fw-bold soldout">ESGOTADO</p>
+                                                <button class="btn btn-soldout fw-bold disabled">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/cds/cd__a_vida_e_uma_granada.jpg" alt="CD - A Vida é uma Granada" class="d-block w-100">
+                                            <h6 class="fw-bold text-wrap mt-1">A Vida é uma Granada</h6>
+                                            <p class="fst-italic">DINGO, 2022</p><hr>
+                                            
+                                            <div class="d-flex justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 61,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/cds/cd__violeta.jpg" alt="CD - Atrás/Além" class="d-block w-100">
+                                            <h6 class="fw-bold text-wrap mt-1"> Violeta </h6>
+                                            <p class="fst-italic">Terno Rei, 2019</p><hr>
+                                            
+                                            <div class="d-flex justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 55,00</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="produtolivro">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-3 mb-5">
+                                            <img src="imgs/shop/livros/livro__vidas_secas.jpg" alt="Livro - Vidas Secas" class="d-block w-100 book">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> Vidas Secas</h6>
+                                                <p class="fst-italic">Graciliano Ramos</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                <strong>Editora:</strong> Record; 159ªed <br>
+                                                <strong>Ano:</strong> 4 de fevereiro, 2019 <br>
+                                                <strong>Capa comum:</strong> 176 páginas<br>
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 39,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-5">
+                                            <img src="imgs/shop/livros/livro__capitaes_de_areia.jpg" alt="Livro - Capitães de Areia" class="d-block w-100 book">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> Capitães de Areia</h6>
+                                                <p class="fst-italic">Jorge Amado</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                <strong>Editora:</strong> Cia. das Letras; 1ªed <br>
+                                                <strong>Ano:</strong> 10 de março, 2018 <br>
+                                                <strong>Capa comum:</strong> 283 páginas<br>
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 45,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-5">
+                                            <img src="imgs/shop/livros/livro__tieta_do_agreste.jpg" alt="Livro - Tieta do Agreste" class="d-block w-100 book">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold mt-1">Tieta do Agreste</h6>
+                                                <p class="fst-italic">Jorge Amado</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                <strong>Editora:</strong> Cia. das Letras; 1ªed <br>
+                                                <strong>Ano:</strong> 27 de março, 2009 <br>
+                                                <strong>Capa comum:</strong> 656 páginas<br>
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 45,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-5 position-relative">
+                                            <p class="small fw-bold position-absolute promo">PROMOÇÃO</p>
+                                            <img src="imgs/shop/livros/livro__historia_da_alimentacao.jpg" alt="Livro - História da Alimentação no Brasil" class="d-block w-100 book">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold mt-1">História da Alimentação no Brasil</h6>
+                                                <p class="fst-italic">Luís da Câmara Cascudo</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                <strong>Editora:</strong> Global; 4ªed <br>
+                                                <strong>Ano:</strong> 22 de julho, 2023 <br>
+                                                <strong>Capa comum:</strong> 972 páginas<br>
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 118,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-5">
+                                            <img src="imgs/shop/livros/livro__poesia_completa_joao_cabral.jpg" alt="Livro - Poesia Completa" class="d-block w-100 book">
+                                            <div class="medium">
+                                                <div class="product d-flex flex-column justify-content-between">
+                                                    <h6 class="fw-bold text-wrap mt-1">Poesia Completa</h6>
+                                                    <p class="fst-italic">João Cabral de Melo Neto</p>
+                                                </div>
+                                                <p class="small mt-2">
+                                                    <strong>Editora:</strong> Alfaguara; 1ªed <br>
+                                                    <strong>Ano:</strong> 3 de novembro, 2020 <br>
+                                                    <strong>Capa comum:</strong> 896 páginas<br>
+                                                </p><hr>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 88,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3 mb-5 position-relative">
+                                            <p class="small fw-bold position-absolute promo">PROMOÇÃO</p>
+                                            <img src="imgs/shop/livros/livro__casa_grande_e_senzala.jpg" alt="Livro - Casa Grande e Senzala" class="d-block w-100 book">
+                                            <div class="medium">
+                                                <div class="product d-flex flex-column justify-content-between">
+                                                    <h6 class="fw-bold mt-1">Casa Grande e Senzala</h6>
+                                                    <p class="fst-italic">Gilberto Freyre</p>
+                                                </div>
+                                                <p class="small mt-2">
+                                                    <strong>Editora:</strong> Global; 51ªed <br>
+                                                    <strong>Ano:</strong> 1 de janeiro, 2006 <br>
+                                                    <strong>Capa dura:</strong> 728 páginas<br>
+                                                </p><hr>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="soldout small">R$ 145,00</p>
+                                                    <p class="fw-bold ms-3">R$ 119,90</p>
+                                                </div>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="produtodecor">
+                                    <div class="row">
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/misc/misc__abaporu.jpg" alt="Quadro - Abaporu" class="d-block w-100 portrait">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> Abaporu</h6>
+                                                <p class="fst-italic">Tarsila do Amaral, 1928</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                Print em algodão.<br>
+                                                Alta qualidade.<br>
+                                                52x42cm
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 109,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/misc/misc__lavrador_de_cafe.jpg" alt="Quadro - O Lavrador de Café" class="d-block w-100 portrait">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> O Lavrador de Café</h6>
+                                                <p class="fst-italic">Cândido Portinari, 1934</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                Print em algodão.<br>
+                                                Alta qualidade.<br>
+                                                52x42cm
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 109,90</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/misc/misc__marivaldo_costa.jpg" alt="Escultura - Onça Tapajônica (Marivaldo Costa)" class="d-block w-100 portrait">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> Onça Tapajônica</h6>
+                                                <p class="fst-italic">Marivaldo Costa</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                Escultura arqueológica em cerâmica.<br>
+                                                Obra original.<br>
+                                                37x48x40cm
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 4230,00</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/misc/misc__tiago_amorim.jpg" alt="Escultura - Pássaros (Tiago Amorim)" class="d-block w-100 portrait">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1">Pássaros</h6>
+                                                <p class="fst-italic">Tiago Amorim</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                Esculturas em cerâmica.<br>
+                                                Obras originais.<br>
+                                                Tamanhos diversos
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 350,00 — R$ 800</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-5">
+                                            <img src="imgs/shop/misc/misc__bento_de_sume.jpg" alt="Escultura - Pássaro Águia em Madeira (Bento de Sumé)" class="d-block w-100 portrait">
+                                            <div class="product d-flex flex-column justify-content-between">
+                                                <h6 class="fw-bold text-wrap mt-1"> Pássaro Águia</h6>
+                                                <p class="fst-italic">Bento de Sumé</p>
+                                            </div>
+                                            <p class="small mt-2">
+                                                Escultura em madeira.<br>
+                                                Obra original.<br>
+                                                14x23x34cm
+                                            </p><hr>
+                                            
+                                            <div class="d-flex flex-column justify-content-between align-items-baseline">
+                                                <p class="fw-bold">R$ 320,00</p>
+                                                <button class="btn btn-outline-success btn-green fw-bold w-100">
+                                                    <i class="bi bi-basket me-1"></i>
+                                                    Tenho interesse
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="cafeteria">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="text-header h1">Venha degustar nossos cafés especiais</h2>   
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate recusandae, molestiae delectus maxime laboriosam assumenda deserunt, dignissimos facere iste accusamus deleniti asperiores, omnis quaerat. Vitae itaque nihil molestiae laboriosam aspernatur?
+                            </p>             
+                            <p>
+                                <span class="fw-bold">SEG À SÁB — 14h às 20H; DOM — 14h às 18h.</span> <br>
+                                Rua da Saudade, S/N — Natal - RN <br>
+                                Próx. ao antigo Hotel Maine
+                            </p>     
+
+                                
+                            <button class="btn btn-outline-success btn-green fw-bold">
+                                <i class="bi bi-pin-map"></i>
+                                Endereço no maps
+                            </button>
+                            <button class="btn btn-outline-success btn-green fw-bold">
+                                <i class="bi bi-receipt"></i>
+                                Faça uma reserva
+                            </button>
+                        </div>
+                        <div class="col-md-5">
+                            <figure>
+                                <img src="imgs/photo__livraria.jpg" class="w-100 mb-2 rounded" alt="Fachada da Livraria Ludovicus">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="d-flex flex-column justify-content-center align-content-center mt-5">
+                        <h1 class="text-header ps-3">
+                            Livraria Ludovicus
+                            <i class="bi bi-eyeglasses"></i>
+                        </h1>
+                        <p class="fst-italic ps-3">Onde a cultura mora. Onde o Brasil se encontra.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-4">
+                    <h4 id="contato" class="text-header">Contato</h6>
+                    <form>
+                        <label for="news">
+                            <span class="fw-bold">Assine nossa newsletter</span>
+                        </label>
+                        <div class="newsletter d-flex gap-2">
+                            <input id="news" type="email" class="form-control">
+                            <button type="button" class="btn btn-warning">Assinar</button>
+                        </div>
+                    </form>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#" id="instagram-link" class="nav-link fw-bold">
+                            <i class="bi bi-instagram me-1"></i>
+                            <span class="d-none d-md-inline">Instagram</span>
+                            </a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="facebook-link"class="nav-link fw-bold">
+                                <i class="bi bi-facebook me-1"></i>
+                            <span class="d-none d-md-inline">Facebook</span>
+                            </a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="youtube-link" class="nav-link fw-bold">
+                                <i class="bi bi-youtube me-1"></i>
+                            <span class="d-none d-md-inline">Youtube</span>
+                            </a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
